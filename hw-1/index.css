@@ -77,35 +77,21 @@ span {
     flex-direction: row;
     gap: 32px;
     justify-content: center;
-    
+    padding-top: 128px;
 }
 
 .menugameall {
     display: flex;
     width: 379px;
     height: 300px;
-    border-radius: 30px;
-    margin-top: 128px;
     color: white;
+    position: absolute;
+    padding-top: 237px;
+    padding-left: 32px;
+    padding-bottom: 32px;
+    padding-right: 268px;
 }
 
-.game_1 {
-    background-image: url(img/game1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.game_2 {
-    background-image: url(img/game2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.game_3 {
-    background-image: url(img/game3.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.img {
+    border-radius: 30px;
 }
