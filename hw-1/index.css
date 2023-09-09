@@ -11,12 +11,16 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+.center {
+    padding-left: calc(50% - 639px);
+    padding-right: calc(50% - 639px);
+}
+
 .top {
     background-image: url(img/top.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 1440px;
     height: 1024px;
     flex-shrink: 0;
     color: #FFF;
@@ -70,7 +74,6 @@ span {
 }
 
 .menugame {
-    width: 1440px;
     height: 556px;
     background: #000915;
     display: flex;
@@ -82,7 +85,6 @@ span {
 
 .menugameall {
     display: flex;
-    width: 379px;
     height: 300px;
     color: white;
     position: absolute;
