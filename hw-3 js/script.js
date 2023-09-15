@@ -27,8 +27,9 @@ let b = '3';
 alert(Number(a) + Number(b));
 
 let varMonth = Number(prompt("Введите номер месяца от 1 до 12"));
-switch (varMonth) { case '1': alert( 'Зима' ); break;
-case '2': alert( 'Зима' ); break;
+switch (varMonth) { 
+case 1: alert( 'Зима' ); break;
+case 2: alert( 'Зима' ); break;
 case 3: alert( 'весна' ); break;
 case 4: alert( 'весна' ); break;
 case 5: alert( 'весна' ); break;
