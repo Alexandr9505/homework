@@ -33,11 +33,8 @@ h1 {
     font-weight: 700;
     line-height: normal;
     display: flex;
-    width: 788.778px;
-    height: 125.007px;
     flex-direction: column;
     justify-content: center;
-    flex-shrink: 0;
     padding-top: 217px;
     padding-bottom: 32px;
     padding-left: 120px;
@@ -70,7 +67,7 @@ p {
     background: #bfe70d;
     transition: 0.8s ease;
     color: #000915;
-  }
+}
 
 span {
     color: #FFF;
@@ -111,8 +108,54 @@ span {
     cursor: pointer;
     transition: 1s;
     box-shadow: 0 0 5px #ccc;
-  }
+}
 
 .img {
     border-radius: 30px;
+}
+
+/* мобильная версия */
+@media (max-width: 767px) {
+    .top {
+        background-image: url(img/topmobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 735px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 32px;
+        padding-top: 238px;
+        display: flex;
+        width: 343px;
+        height: 77.436px;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 22px;
+        max-width: 343px;
+        margin-bottom: 32px;
+        text-align: center;
+        margin-left: 16px;
+        height: 66px;
+    }
+
+    .go {
+        margin-top: 32px;
+        margin-left: 70.47px;
+    }
+
+    .menugame {
+        display: flex;
+        flex-direction: column;
+        height: 1221px;
+    }
+
 }
