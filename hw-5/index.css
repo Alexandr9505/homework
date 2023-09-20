@@ -290,7 +290,7 @@ span {
     font-size: 14px;
     line-height: 22px;
 }
-}
+
 
 @media (min-width: 320px) and (max-width: 374px) {
     .item-text {
