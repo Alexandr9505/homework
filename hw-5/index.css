@@ -1,0 +1,303 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 639px);
+    padding-right: calc(50% - 639px);
+}
+
+.top {
+    background-image: url(img/top.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1024px;
+    flex-shrink: 0;
+    color: #FFF;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 217px;
+    padding-bottom: 32px;
+    padding-left: 120px;
+    padding-right: 531px;
+}
+
+p {
+    width: 481px;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    margin-left: 120px;
+    margin-right: 839px;
+}
+
+.go {
+    border-radius: 30px;
+    background: #9C0332;
+    color: white;
+    width: 234.063px;
+    height: 48.603px;
+    margin-top: 44px;
+    margin-left: 120px;
+}
+
+.go:hover {
+    border: 1px solid #fcfcfc;
+    background: #bfe70d;
+    transition: 0.8s ease;
+    color: #000915;
+}
+
+span {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.menugame {
+    height: 556px;
+    background: #000915;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: center;
+    padding-top: 128px;
+}
+
+.menugameall {
+    display: flex;
+    color: white;
+    position: absolute;
+    padding-top: 237px;
+    padding-left: 32px;
+    padding-bottom: 32px;
+    padding-right: 268px;
+}
+
+.item {
+    height: 300px;
+}
+
+.item:hover {
+    border: 3px solid #fd7404;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 1s;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.img {
+    border-radius: 30px;
+}
+
+.timeyear {
+    background-color: #000915;
+}
+
+.timeyear__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 233px;
+    padding-bottom: 233px;
+}
+
+.vice_verca {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 136px;
+}
+
+.timeyear__heading {
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.timeyear__text {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    width: 584px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.riddleGame {
+    background-color: #000915;
+    background-image: url(img/mystery.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.riddleGame__text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 288px;
+    padding-top: 276px;
+}
+
+.riddleGame__heading {
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.riddleGame__text {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    max-width: 1200px;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.footer {
+    background-color: #000915;
+    text-align: center;
+}
+
+.footer__text {
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+/* мобильная версия */
+@media (max-width: 767px) {
+    .top {
+        background-image: url(img/topmobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 735px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 32px;
+        padding-top: 238px;
+        display: flex;
+        width: 343px;
+        height: 77.436px;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 22px;
+        max-width: 343px;
+        margin-bottom: 32px;
+        text-align: center;
+        margin-left: 16px;
+        height: 66px;
+    }
+
+    .go {
+        margin-top: 32px;
+        margin-left: 70.47px;
+    }
+
+    .menugame {
+        display: flex;
+        flex-direction: column;
+        height: 1221px;
+    }
+
+}
+
+.timeyear__content {
+    padding-top: 178px;
+    padding-bottom: 0px;
+}
+
+.vice_verca {
+    padding-top: 136px;
+    padding-bottom: 90px;
+}
+
+.timeyear__heading {
+    font-size: 32px;
+}
+
+.timeyear__text {
+    width: 343px;
+    font-size: 14px;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    /* 157.143% */
+    text-align: center;
+}
+
+.timeyear-img {
+    width: 344px;
+}
+
+.riddleGame__text-block {
+    padding-top: 51px;
+    padding-bottom: 487px;
+}
+
+.riddleGame__heading {
+    font-size: 32px;
+}
+
+.riddleGame__text {
+    font-size: 14px;
+    line-height: 22px;
+}
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+    .item-text {
+        top: 183px;
+    }
+
+    .timeyear-img {
+        width: 290px;
+    }
+}
