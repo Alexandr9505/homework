@@ -117,6 +117,15 @@ span {
     background-color: #000915;
 }
 
+.timeyear__text-block {
+    display: flex;
+    width: 584px;
+    padding: 33px 0px 45.007px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
 .timeyear__content {
     display: flex;
     justify-content: space-between;
@@ -138,17 +147,7 @@ span {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-}
-
-.timeyear__text {
-    color: #FFF;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 32px;
-    width: 584px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-left: 120px;
 }
 
 .riddleGame {
@@ -185,11 +184,24 @@ span {
     text-align: center;
     padding-top: 32px;
     padding-bottom: 32px;
+    width: 1200px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.button_riddle {
+    margin-left: 0;
 }
 
 .footer {
     background-color: #000915;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__text {
@@ -200,6 +212,8 @@ span {
     line-height: normal;
     padding-top: 32px;
     padding-bottom: 32px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 /* мобильная версия */
@@ -246,51 +260,51 @@ span {
         height: 1221px;
     }
 
+    .timeyear__content {
+        padding-top: 178px;
+        padding-bottom: 0px;
+    }
+
+    .vice_verca {
+        padding-top: 136px;
+        padding-bottom: 90px;
+    }
+
+    .timeyear__heading {
+        font-size: 32px;
+    }
+
+    .timeyear__text {
+        width: 343px;
+        font-size: 14px;
+        color: #FFF;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 22px;
+        /* 157.143% */
+        text-align: center;
+    }
+
+    .timeyear-img {
+        width: 344px;
+    }
+
+    .riddleGame__text-block {
+        padding-top: 51px;
+        padding-bottom: 487px;
+    }
+
+    .riddleGame__heading {
+        font-size: 32px;
+    }
+
+    .riddleGame__text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
 }
 
-.timeyear__content {
-    padding-top: 178px;
-    padding-bottom: 0px;
-}
-
-.vice_verca {
-    padding-top: 136px;
-    padding-bottom: 90px;
-}
-
-.timeyear__heading {
-    font-size: 32px;
-}
-
-.timeyear__text {
-    width: 343px;
-    font-size: 14px;
-    color: #FFF;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 22px;
-    /* 157.143% */
-    text-align: center;
-}
-
-.timeyear-img {
-    width: 344px;
-}
-
-.riddleGame__text-block {
-    padding-top: 51px;
-    padding-bottom: 487px;
-}
-
-.riddleGame__heading {
-    font-size: 32px;
-}
-
-.riddleGame__text {
-    font-size: 14px;
-    line-height: 22px;
-}
-}
 
 @media (min-width: 320px) and (max-width: 374px) {
     .item-text {
