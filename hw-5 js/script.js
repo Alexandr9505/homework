@@ -73,22 +73,30 @@ const exponentiation = (a) => {
 exponentiation(prompt('Введите число'));
 
 
+function getCircleArea() {
+	return this.radius ** 2 * Math.PI;
+}
+
+function getCirclePerimiter() {
+ return this.radius * 2 * Math.PI; 
+}
+
 const circle1 = {
-	radius: 4,
-	getArea() {
-		console.log(`Площадь круга через радиус равна ${this.radius ** 2 * Math.PI}`);
-	}
+	radius:4,
+	getArea: getCircleArea,
+	getPerimiter: getCirclePerimiter,
 }
 
-const circle2 = {
-	radius: 4,
-	getPerimeter() {
-		console.log(`Периметр окружности равен ${2 * Math.PI * this.radius}`);
-	}
+const circle2 = { 
+	radius:8,
+	getArea: getCircleArea,
+	getPerimiter: getCirclePerimiter,
 }
 
-circle1.getArea();
-circle2.getPerimeter();
+	console.log(`Площадь круга 1 равна ${circle1.getArea()}`);
+	console.log(`Периметр круга 1 равен ${circle1.getPerimiter()}`);
+	console.log(`Площадь круга 2 равна ${circle2.getArea()}`);
+	console.log(`Периметр круга 2 равен ${circle2.getPerimiter()}`);
 
 
 const showSeason = (a) => {
