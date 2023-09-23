@@ -99,24 +99,23 @@ const circle2 = {
 	console.log(`Периметр круга 2 равен ${circle2.getPerimiter()}`);
 
 
-const showSeason = (a) => {
+const showSeason = () => {
+	let a = Number(prompt('Введите число от 1 до 12'));
 	if (a === 1 || a === 2 || a === 12) {
-		return 'Зима';
+		alert('Зима');
 
 	} else if (a === 3 || a === 4 || a === 5) {
-		return 'Весна';
+		alert('Весна');
 	}
 
 	else if (a === 6 || a === 7 || a === 8) {
-		return 'Лето';
+		alert('Лето');
 	}
 
 	else if (a === 9 || a === 10 || a === 11) {
-		return 'Осень';
+		alert('Осень');
 
 	} else {
-		return 'Вы ввели что-то не то';
+		alert('Вы ввели что-то не то');
 	}
 }
-
-showSeason(Number(prompt('Введите значение от 1 до 12')));
