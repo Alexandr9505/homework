@@ -1,10 +1,9 @@
 let arrayNumbers = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < arrayNumbers.length; i++) {
-	if (arrayNumbers[i] >= 10) {
+	console.log(arrayNumbers[i]);
+	if (arrayNumbers[i] === 10) {
 		break;
-	} else {
-		console.log(arrayNumbers[i]);
 	}
 }
 
@@ -29,7 +28,7 @@ console.log(createArr);
 
 
 let addArr = [1, 1, 1];
-addArr.push(2, 2);
+addArr.push(2, 2, 2);
 console.log(addArr);
 
 
@@ -40,15 +39,11 @@ console.log(deleteSymb);
 
 
 let guessNumber = [9, 8, 7, 6, 5];
-let result = 0;
-let enterNumber = Number(prompt('Введите число любое'));
-for (let i = 0; i < guessNumber.length; i++) {
-	if (enterNumber === guessNumber[i]) {
-		console.log('угадал');
-		break
-	} else {
-		console.log('НЕ угадал');
-	}
+let checkNumber = guessNumber.includes(Number(prompt('Введите число любое')));
+if (checkNumber === true) {
+	alert('Угадал');
+ } else {
+	alert('Не угадал');
 }
 
 
@@ -59,27 +54,23 @@ res = res.join('');
 console.log(res);
 
 
-let sortArr = [
+let sortArr2 = [
 	[1, 2, 3],
 	[4, 5, 6]
 ];
-let arr = [];
-for (let i = 0; i < sortArr.length; i++) {
-	for (let j = 0; j < sortArr[i].length; j++) {
-		arr.push(sortArr[i][j]);
-	}
-}
-console.log(arr);
+console.log(sortArr2.flat());
 
 
 let array = [];
-let sum = 1;
-for (let i = 1; i <= 10; i++) {
-	array.push(i);
+let sum = 0;
+for (let i = 0; i < 10; i++) {
+	array.push(getRandomInt(10));
 }
-for (let j = 1; j < array.length; j++) {
-	sum += array[j];
-	console.log(sum);
+console.log(array);
+
+for (let i = 0; i < array.length - 1; i++) {
+	const sum = array[i] + array[i + 1];
+	console.log("Сумма", array[i], "и", array[i + 1], "равна", sum);
 }
 
 
