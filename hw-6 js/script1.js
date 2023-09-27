@@ -61,16 +61,10 @@ let sortArr2 = [
 console.log(sortArr2.flat());
 
 
-let array = [];
-let sum = 0;
-for (let i = 0; i < 10; i++) {
-	array.push(getRandomInt(10));
-}
-console.log(array);
-
-for (let i = 0; i < array.length - 1; i++) {
-	const sum = array[i] + array[i + 1];
-	console.log("Сумма", array[i], "и", array[i + 1], "равна", sum);
+const newArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (let i = 0; i < newArray.length - 1; i++) {
+    const sum = newArray[i] + newArray[i + 1];
+    console.log("Сумма", newArray[i], "и", newArray[i + 1], "равна", sum);
 }
 
 
