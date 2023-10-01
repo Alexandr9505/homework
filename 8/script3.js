@@ -38,7 +38,7 @@ function filter(arr, callback) {
 
 console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
 
-const people = [
+const people2 = [
 	{ name: 'Глеб', gender: 'male' },
 	{ name: 'Анна', gender: 'female' },
 	{ name: 'Олег', gender: 'male' },
